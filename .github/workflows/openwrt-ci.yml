@@ -60,8 +60,8 @@ jobs:
           
       - name: Other plugins
         run: | 
-          sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
-          cd package/lean
+          cd package/openwrt
+          git clone https://github.com/fw876/helloworld.git
           git clone https://github.com/jerrykuku/luci-app-argon-config.git
           git clone https://github.com/sirpdboy/luci-app-ddns-go.git
           git clone https://github.com/tty228/luci-app-wechatpush.git
